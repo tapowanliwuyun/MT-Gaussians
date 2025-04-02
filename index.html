@@ -182,20 +182,23 @@
   </div>
 </section>
 
-  <!-- 直接在代码片里加 CSS 调节轮播框大小 -->
+<!-- 直接在代码片里加 CSS 调节轮播框大小 -->
 <style>
   /* 轮播框尺寸（使用百分比） */
   #results-carousel {
     width: 80%;          /* 轮播框占父容器 80% 宽 */
     height: 50vh;        /* 轮播框占视口高度 50% */
     margin: 0 auto;      /* 居中显示 */
+    display: flex;       
+    align-items: center; /* 确保图片在轮播框中居中 */
+    justify-content: center;
   }
 
-  /* 让图片适应轮播框 */
+  /* 让图片完整显示 */
   #results-carousel .carousel-image {
     width: 100%;         /* 图片宽度填满轮播框 */
     height: 100%;        /* 图片高度填满轮播框 */
-    object-fit: cover;   /* 保持比例填充轮播框，超出部分裁剪 */
+    object-fit: contain; /* **确保图片不被裁剪**，可能会有留白 */
   }
 
   /* 适配小屏幕 */
