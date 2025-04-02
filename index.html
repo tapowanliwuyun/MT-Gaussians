@@ -157,39 +157,39 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+        <div class="item">
+          <!-- 第一张图片 -->
+          <img src="static/images/carousel1.jpg" alt="First Image" class="carousel-image"/>
+          <h2 class="subtitle has-text-centered">First image description.</h2>
+        </div>
+        <div class="item">
+          <!-- 第二张图片 -->
+          <img src="static/images/carousel2.jpg" alt="Second Image" class="carousel-image"/>
+          <h2 class="subtitle has-text-centered">Second image description.</h2>
+        </div>
+        <div class="item">
+          <!-- 第三张图片 -->
+          <img src="static/images/carousel3.jpg" alt="Third Image" class="carousel-image"/>
+          <h2 class="subtitle has-text-centered">Third image description.</h2>
+        </div>
+        <div class="item">
+          <!-- 第四张图片 -->
+          <img src="static/images/carousel4.jpg" alt="Fourth Image" class="carousel-image"/>
+          <h2 class="subtitle has-text-centered">Fourth image description.</h2>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+
+<!-- CSS 样式 -->
+<style>
+  .carousel-image {
+    width: 100%;        /* 图片填充整个轮播项 */
+    height: 400px;      /* 固定高度，确保一致 */
+    object-fit: cover;  /* 裁剪填充区域，保持图片比例 */
+  }
+</style>
 
 
 
